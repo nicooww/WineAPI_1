@@ -9,7 +9,7 @@ def processBarcode(barcode):
     print(data)
     try:
         resp, content = h.request(url,"POST", urlencode(data))
-        print (resp['status'])
+        print (resp['status master'])
         print (content)
     except:
         print("Unable to reach the target")
